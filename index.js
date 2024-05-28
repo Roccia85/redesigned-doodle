@@ -12,3 +12,14 @@ function generateRandomNumber() {
 
 const randomNum = generateRandomNumber();
 console.log(`Random number: ${randomNum}`);
+
+function rollDice() {
+    const min = 1;
+    const max = 6;
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+}
+
+const diceRoll = rollDice();
+console.log(`Dice roll: ${diceRoll}`);
+
